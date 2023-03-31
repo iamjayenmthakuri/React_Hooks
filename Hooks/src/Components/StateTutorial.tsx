@@ -1,6 +1,8 @@
 import { useState } from "react";
 
 function StateTutorial() {
+  const [count, setCount] = useState(0);
+  const [showText, setShowText] = useState(true);
   const [counter, setCounter] = useState(0);
 
   const Increment = () => {
@@ -20,6 +22,18 @@ function StateTutorial() {
       <div>
         <input type="text" placeholder="enter-something..." onChange={change} />
         {inputValue}
+      </div>
+      <div>
+        <h1> {count}</h1>
+        <button
+          onClick={() => {
+            setCount(count + 1);
+            setShowText(!showText);
+          }}
+        >
+          Click Me
+        </button>
+        {showText ? <p>This is even number </p> : <p> This is a odd number</p>}
       </div>
     </>
   );
