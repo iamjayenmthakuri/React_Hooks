@@ -10,8 +10,7 @@ function EffectTutorial() {
         setData(response.data[0].email);
         console.log("API WAS CALLED");
       });
-  });
-  console.log("hellow World");
+  }, []);
   return <div>{data}</div>;
 }
 
