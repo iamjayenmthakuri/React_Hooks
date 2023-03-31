@@ -2,10 +2,16 @@ import React from "react";
 
 function StateTutorial() {
   let counter = 0;
+  const Increment = () => {
+    counter = counter + 1;
+    console.log(counter);
+  };
+
   return (
-    <div>
-      {counter} <button>Increment</button>
-    </div>
+    <>
+      {counter}
+      <button onClick={Increment}>Increment</button>
+    </>
   );
 }
 
