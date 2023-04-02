@@ -7,8 +7,7 @@ function ImperativeHandle() {
     <div>
       <button
         onClick={() => {
-          const current = buttonRef.current;
-          current.alterToggle();
+          buttonRef.current.alterToggle();
         }}
       >
         Button From Parents{" "}
