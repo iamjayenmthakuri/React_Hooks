@@ -2,11 +2,18 @@ import { useRef } from "react";
 import Button from "./Button";
 
 function ImperativeHandle() {
-  const ref = useRef(null);
+  const buttonRef = useRef(null);
   return (
     <div>
-      <button>Button From Parents </button>
-      <Button />
+      <button
+        onClick={() => {
+          const current = buttonRef.current;
+          current.alterToggle();
+        }}
+      >
+        Button From Parents{" "}
+      </button>
+      <Button ref={buttonRef} />
     </div>
   );
 }
