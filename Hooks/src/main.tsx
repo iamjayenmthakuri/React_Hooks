@@ -5,6 +5,7 @@ import RefTutorial from "./Components/RefTutorial";
 import ReducerTutorial from "./Components/ReducerTutorial";
 import StateTutorial from "./Components/StateTutorial";
 import "./index.css";
+import LayoutEffectTutorial from "./Components/LayoutEffectTutorial";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -12,5 +13,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <ReducerTutorial />
     <EffectTutorial />
     <RefTutorial />
+    <LayoutEffectTutorial />
   </React.StrictMode>
 );
