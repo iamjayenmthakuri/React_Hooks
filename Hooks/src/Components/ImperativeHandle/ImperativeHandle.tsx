@@ -5,6 +5,7 @@ function ImperativeHandle() {
   const buttonRef = useRef(null);
   return (
     <div>
+      Imperative Handle
       <button
         onClick={() => {
           buttonRef.current.alterToggle();
