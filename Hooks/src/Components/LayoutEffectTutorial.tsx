@@ -6,6 +6,7 @@ function LayoutEffectTutorial() {
   useLayoutEffect(() => {
     console.log("Hi");
   }, []);
+
   useEffect(() => {
     const current = inputRef.current;
     current.value = "Hello";
